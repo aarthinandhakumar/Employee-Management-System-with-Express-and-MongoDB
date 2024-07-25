@@ -1,0 +1,28 @@
+<div class="table-responsive">
+    <form method="post" action="/employees/edit/{{employee._id}}">
+        <table class="table table-condensed">
+            <tbody>
+                <tr>
+                    <th>First Name: </th> <!-- Input field for the first name, pre-filled with the current employee's first name -->
+                    <td><input type="text" name="fname" required 
+                            value="{{employee.firstName}}"></td>
+                </tr>
+                <tr>
+                    <th>Last Name: </th> <!-- Input field for the last name, pre-filled with the current employee's first name -->
+                    <td><input type="text" name="lname" required
+                            value="{{employee.lastName}}"></td>
+                </tr>
+            </tbody>
+            <tfooter>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Save" class="btn btn-success">
+                        <input type="button" value="Cancel" class="btn btn-danger"
+                        onclick="cancelEdit()">
+                    </td>
+                </tr>
+            </tfooter>
+        </table>
+    </form>
+</div>

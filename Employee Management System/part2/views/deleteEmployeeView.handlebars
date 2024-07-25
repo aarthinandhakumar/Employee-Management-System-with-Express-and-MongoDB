@@ -1,0 +1,28 @@
+<div class="table-responsive">
+  <form method="post" action='/employees/delete/{{employee._id}}'>
+    <table class="table table-condensed"> <!-- Table for displaying and editing employee details -->
+      <tbody>
+        <tr>
+          <th>First Name: </td>
+          <td>{{employee.firstName}}</td>
+        </tr>
+        <tr>
+          <th>Last Name: </td>
+          <td>{{employee.lastName}}</td>
+        </tr>
+        <input type="hidden" name="id" value="{{employee._id}}">
+       
+      </tbody>
+      <tfooter>
+        <tr>
+          <td></td>
+          <td>
+              <input type="submit" value="OK" class="btn btn-success"> <!-- OK Button -->
+              <input type="button" value="Cancel" class="btn btn-danger" onclick="cancelDelete()"> <!-- Cancel Button -->
+                   
+          </td>
+        </tr>
+      </tfooter>
+    </table>
+  </form>
+</div>
