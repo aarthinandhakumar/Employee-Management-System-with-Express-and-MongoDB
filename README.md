@@ -55,4 +55,4 @@ displayed.
 - **Delete Employee**: Click the "Delete" button next to an employee's name to open the delete confirmation. Confirm the deletion to remove the employee from the database. The updated list of employees will be displayed.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt) file for details.
+This project is licensed under the MIT License - see the [LICENSE](License.txt) file for details.
